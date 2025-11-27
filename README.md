@@ -50,7 +50,7 @@ WAV, MP3, M4A, MP4
 # 1. Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/gladia-batch-transcriber.git
+git clone https://github.com/robomustib/gladia-batch-transcriber.git
 cd gladia-batch-transcriber
 ```
 
@@ -84,7 +84,7 @@ Place your audio files into the audio_files directory.
 Run the script:
 ```bash
 
-python transcribe.py
+python gladia_batch_transcriber.py
 
 ```
 
@@ -111,10 +111,10 @@ By default, the script is optimized for German, Turkish, and English with Code S
 ```
 
 ## Troubleshooting
-- **401** Unauthorized	API Key is missing or invalid.	Check your .env file. Ensure there are no spaces around the key.
-- **429** Too Many Requests	Concurrency limit exceeded.	Lower the CONCURRENCY_LIMIT in .env (e.g., set to 3).
-- **File is empty** (0 Bytes)	Corrupt audio file.	Check the source file in audio_files. It might have been copied incorrectly.
-- **TimeoutError**	Processing took > 2 hours.	The file might be extremely large or the API is hanging. Check your internet connection.
+- **401 Unauthorized** API Key is missing or invalid.* Check your .env file. Ensure there are no spaces around the key.
+- **429 Too Many Requests** Concurrency limit exceeded.* Lower the CONCURRENCY_LIMIT in .env (e.g., set to 3).
+- **File is empty (0 Bytes)**	*Corrupt audio file.* Check the source file in audio_files. It might have been copied incorrectly.
+- **TimeoutError Processing took > 2 hours** *The file might be extremely large or the API is hanging.* Check your internet connection.
 
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details.
