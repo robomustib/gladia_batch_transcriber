@@ -26,7 +26,7 @@ WAV, MP3, M4A, MP4
 - Qualitative research projects
 
 ## Flowchart
-<img src="https://github.com/robomustib/gladia_batch_transcriber/blob/main/img/flowchart.svg?raw=true" alt="Flowchart of Gladia Batch Transcriber" width="50%"/>
+<img src="https://github.com/robomustib/gladia_batch_transcriber/blob/main/img/flowchart.svg" alt="Flowchart of Gladia Batch Transcriber" width="50%"/>
 
 ## Installation
 
