@@ -28,7 +28,7 @@ WAV, MP3, M4A, MP4
 ## Flowchart
 <img src="https://github.com/robomustib/gladia_batch_transcriber/blob/main/img/flowchart.svg" alt="Flowchart of Gladia Batch Transcriber" width="50%"/>
 
-#Color Legend
+# Color Legend
 
 - Green - Successful operations (completion, success statistics, final report)
 - Blue - Active processing steps (upload, transcription, file operations)
