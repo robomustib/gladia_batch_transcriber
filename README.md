@@ -133,5 +133,5 @@ If you use this software for your research, please cite it as follows:
   title = {Gladia Batch Transcriber},
   year = {2025},
   version = {1.3.1},
-  url = {[https://github.com/robomustib/gladia-batch-transcriber](https://github.com/robomustib/gladia-batch-transcriber)}
+  url = {https://github.com/robomustib/gladia-batch-transcriber}
 }
