@@ -118,3 +118,20 @@ By default, the script is optimized for German, Turkish, and English with Code S
 
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Citation
+
+If you use this software for your research, please cite it as follows:
+
+**APA Format:**
+> Bilgin, M. (2025). *Gladia Batch Transcriber* (Version 1.3.1) [Computer software]. GitHub. https://github.com/robomustib/gladia-batch-transcriber
+
+**BibTeX:**
+```bibtex
+@software{gladia_batch_transcriber,
+  author = {Bilgin, Mustafa},
+  title = {Gladia Batch Transcriber},
+  year = {2025},
+  version = {1.3.1},
+  url = {[https://github.com/robomustib/gladia-batch-transcriber](https://github.com/robomustib/gladia-batch-transcriber)}
+}
