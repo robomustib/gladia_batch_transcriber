@@ -64,8 +64,6 @@ Create a file named .env in the root directory. You can use the example below. C
 
 ```python
 
-# .env file
-
 # Your Gladia API Key (Required)
 GLADIA_API_KEY=your_api_key_goes_here
 
