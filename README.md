@@ -43,3 +43,79 @@ WAV, MP3, M4A, MP4
 - Bulk audio transcription
 - Multilingual datasets
 - Qualitative research projects
+
+## Installation
+
+# 1. Clone the Repository
+
+```bash
+git clone https://github.com/YOUR_USERNAME/gladia-batch-transcriber.git
+cd gladia-batch-transcriber
+```
+
+# 2. Install Dependencies
+It is recommended to use a virtual environment.
+```bash
+pip install -r requirements.txt
+```
+
+# 3. Configuration (.env)
+Create a file named .env in the root directory. You can use the example below. Crucial: Set the CONCURRENCY_LIMIT according to your Gladia plan to avoid errors.
+
+```python
+
+# .env file
+
+# Your Gladia API Key (Required)
+GLADIA_API_KEY=your_api_key_goes_here
+
+# Concurrency Limit (Simultaneous Uploads)
+# Free Tier: max 3
+# Paid/Pro Tier: max 25 (Recommended for speed)
+CONCURRENCY_LIMIT=3
+
+# Polling Interval in seconds (Default: 10)
+POLLING_INTERVAL=10
+
+```
+
+## Usage
+Place your audio files into the audio_files directory.
+
+Run the script:
+```bash
+
+python transcribe.py
+
+```
+
+The script will:
+
+- Scan the folder for supported audio formats.
+- Display a summary of file types found.
+- Start processing and show a progress bar.
+- Save all transcripts to the transcripts folder.
+
+## Customization (Languages)
+
+By default, the script is optimized for German, Turkish, and English with Code Switching enabled. To change this, open transcribe.py and modify the TRANSCRIPTION_CONFIG dictionary:
+```python
+    TRANSCRIPTION_CONFIG = {
+        "language_config": {
+            # Edit languages here (e.g., add "fr" for French, "es" for Spanish)
+            "languages": ["de", "tr", "en"], 
+            "code_switching": True,
+        },
+        "diarization": True, # Detects different speakers
+    }
+
+```python
+
+## Troubleshooting
+- **401** Unauthorized	API Key is missing or invalid.	Check your .env file. Ensure there are no spaces around the key.
+- **429** Too Many Requests	Concurrency limit exceeded.	Lower the CONCURRENCY_LIMIT in .env (e.g., set to 3).
+- **File is empty** (0 Bytes)	Corrupt audio file.	Check the source file in audio_files. It might have been copied incorrectly.
+- **TimeoutError**	Processing took > 2 hours.	The file might be extremely large or the API is hanging. Check your internet connection.
+
+## License
+This project is licensed under the MIT License - see the LICENSE file for details.
