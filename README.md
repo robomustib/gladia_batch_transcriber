@@ -15,26 +15,6 @@ A robust Python tool for batch audio transcription using the Gladia API. Designe
 
 **Multi-Language Ready** Pre-configured for guided language detection (e.g., DE/TR/EN) to improve accuracy in multi-lingual audio.
 
-
-## Quick Start
-# 1. Install dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-# 2. Configure API key in .env
-```bash
-echo "GLADIA_API_KEY=your_key_here" > .env
-```
-
-# 3. Add audio files to audio_files/
-
-# 4. Run transcription
-```python
-python gladia_batch_transcriber.py
-```
-
 ## Supported Formats
 
 WAV, MP3, M4A, MP4
@@ -44,6 +24,9 @@ WAV, MP3, M4A, MP4
 - Bulk audio transcription
 - Multilingual datasets
 - Qualitative research projects
+
+## Flowchart
+<img src="https://github.com/robomustib/gladia_batch_transcriber/blob/main/img/flowchart.svg?raw=true" alt="Flowchart of Gladia Batch Transcriber" width="50%"/>
 
 ## Installation
 
