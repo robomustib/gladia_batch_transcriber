@@ -30,7 +30,9 @@ echo "GLADIA_API_KEY=your_key_here" > .env
 # 3. Add audio files to audio_files/
 
 # 4. Run transcription
+```python
 python gladia_batch_transcriber.py
+```
 
 ## Supported Formats
 
