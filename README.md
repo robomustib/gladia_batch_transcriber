@@ -108,7 +108,7 @@ By default, the script is optimized for German, Turkish, and English with Code S
         "diarization": True, # Detects different speakers
     }
 
-```python
+```
 
 ## Troubleshooting
 - **401** Unauthorized	API Key is missing or invalid.	Check your .env file. Ensure there are no spaces around the key.
