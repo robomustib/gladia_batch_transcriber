@@ -17,11 +17,12 @@ A robust Python tool for batch audio transcription using the Gladia API. Designe
 
 
 ## Quick Start
+# 1. Install dependencies
 
 ```bash
-# 1. Install dependencies
 pip install -r requirements.txt
 ```
+
 # 2. Configure API key in .env
 ```bash
 echo "GLADIA_API_KEY=your_key_here" > .env
