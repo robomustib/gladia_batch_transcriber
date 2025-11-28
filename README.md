@@ -115,14 +115,19 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 If you use this software for your research, please cite it as follows:
 
 **APA Format:**
-> Bilgin, M. (2025). *Gladia Batch Transcriber* (Version 1.3.1) [Computer software]. GitHub. https://github.com/robomustib/gladia-batch-transcriber
+> Bilgin, M. (2025). *Gladia Batch Transcriber* (Version 1.3.1) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.17747599
 
 **BibTeX:**
 ```bibtex
+
 @software{gladia_batch_transcriber,
-  author = {Bilgin, Mustafa},
-  title = {Gladia Batch Transcriber},
-  year = {2025},
-  version = {1.3.1},
-  url = {https://github.com/robomustib/gladia-batch-transcriber}
+  author       = {Bilgin, Mustafa},
+  title        = {Gladia Batch Transcriber - Efficient Large-Scale Audio Transcription},
+  year         = {2025},
+  publisher    = {Zenodo},
+  version      = {1.0.0},
+  doi          = {10.5281/zenodo.17747599},
+  url          = {https://doi.org/10.5281/zenodo.17747599}
 }
+
+```
