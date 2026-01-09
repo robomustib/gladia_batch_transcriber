@@ -86,6 +86,26 @@ The script will:
 - Start processing and show a progress bar.
 - Save all transcripts to the transcripts folder.
 
+---
+
+## Included Scripts
+
+1. **`gladia_batch_transcriber.py` (Pro Version)**
+   - **Fast** (uses multithreading).
+   - Uploads multiple files simultaneously.
+   - **Requires a Paid/Pro Plan** to avoid rate limits.
+
+2. **`gladia_batch_transcriber_slow.py` (Free/Test Version)**
+- **Full Workflow:** Automatically handles Upload -> Transcription Start -> Polling (Waiting) -> Saving result to `.txt`.
+- **Artificial Delay:** Deliberately waits **5 seconds** between each file to be gentle on the server.
+- **Serial Processing:** Processes strictly one file at a time.
+- **Robustness:** - Fixes MIME-type issues (adds `audio/mpeg` header).
+  - Skips empty files (0 KB).
+  - Automatically detects the **API Rate Limit (Error 429)** and stops gracefully to prevent bans.
+- **Use Case:** Perfect for testing connectivity or demonstrating the strict limits of the Free Tier (max 20 requests/hour).
+
+---
+
 ## Customization (Languages)
 
 By default, the script is optimized for German, Turkish, and English with Code Switching enabled. To change this, open transcribe.py and modify the TRANSCRIPTION_CONFIG dictionary:
