@@ -77,7 +77,7 @@ async def start_transcription(client, audio_url):
     
     response = await client.post("https://api.gladia.io/v2/pre-recorded/", json=payload)
     
-    if response.status_code != 200:
+    if response.status_code not in (200, 201):
         error_detail = response.text
         logger.error(f"API Start Error: {error_detail}")
         raise Exception(f"API Start denied ({response.status_code}): {error_detail}")
