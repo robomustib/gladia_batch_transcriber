@@ -1,3 +1,9 @@
+"""
+Gladia Batch Transcriber (https://github.com/robomustib/gladia_batch_transcriber)
+Copyright (c) 2025 Mustafa Bilgin
+Licensed under Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)
+"""
+
 import os
 import time
 import requests
