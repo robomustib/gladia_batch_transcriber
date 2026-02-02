@@ -5,10 +5,10 @@ authors:
   given-names: "Mustafa"
 title: "Gladia Batch Transcriber"
 version: 1.3.2
-doi: 10.xxxx/xxxxx
+doi: 10.5281/zenodo.17747599
 date-released: 2025-11-28
-url: "[https://github.com/robomustib/gladia-batch-transcriber](https://github.com/DEIN_USER/gladia-batch-transcriber)"
+url: "[https://github.com/robomustib/gladia-batch-transcriber](https://github.com/robomustib/gladia-batch-transcriber)"
 identifiers:
   - type: doi
-    value: 10.xxxx/xxxxx
+    value: 10.5281/zenodo.17747599
     description: The DOI of the software release
